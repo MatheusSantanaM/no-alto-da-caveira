@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://c0wunrodxgdl6"]
+
+[ext_resource type="Script" uid="uid://dftv1dpiasu5r" path="res://Scripts/day_end.gd" id="1_b7kdr"]
+
+[node name="Node2D" type="Node2D" unique_id=1591620793]
+script = ExtResource("1_b7kdr")
+
+[node name="btn_continue" type="Button" parent="." unique_id=1780417501]
+offset_left = 18.0
+offset_top = 70.0
+offset_right = 203.0
+offset_bottom = 175.0
+text = "Prossiga"
+
+[node name="Resultado" type="Label" parent="." unique_id=1166290179]
+offset_right = 40.0
+offset_bottom = 23.0
+
+[connection signal="button_up" from="btn_continue" to="." method="_on_btn_continue_button_up"]

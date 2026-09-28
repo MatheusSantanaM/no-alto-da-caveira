@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://b53gx2fsgqmfi"]
+
+[ext_resource type="Script" uid="uid://bai2jw41w4g7w" path="res://Scripts/dialogo_inicial.gd" id="1_rim7h"]
+
+[node name="Node2D" type="Node2D" unique_id=1510143904]
+script = ExtResource("1_rim7h")
+
+[node name="Label" type="Label" parent="." unique_id=367424667]
+offset_right = 551.0
+offset_bottom = 337.0
+theme_override_font_sizes/font_size = 30
+
+[node name="Label2" type="Label" parent="." unique_id=1092284958]
+offset_left = 918.0
+offset_top = 612.0
+offset_right = 1142.0
+offset_bottom = 643.0
+text = "Aperte Enter para Prosseguir"
