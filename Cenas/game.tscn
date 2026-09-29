@@ -1,11 +1,17 @@
 [gd_scene format=3 uid="uid://rugdjalh2h2a"]
 
 [ext_resource type="Script" uid="uid://b4y4aex7eyvvl" path="res://Scripts/game.gd" id="1_fd8wr"]
+[ext_resource type="Texture2D" uid="uid://yh60kkv6428s" path="res://cenario.jpg" id="2_csek2"]
 
 [node name="Node2D" type="Node2D" unique_id=5386702]
 script = ExtResource("1_fd8wr")
 metadata/_edit_vertical_guides_ = [581.0]
 metadata/_edit_horizontal_guides_ = [340.0]
+
+[node name="Cenario" type="Sprite2D" parent="." unique_id=1710884807]
+position = Vector2(575.49994, 324)
+scale = Vector2(1.8774507, 1.8888888)
+texture = ExtResource("2_csek2")
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=1087706106]
 offset_right = 1150.0

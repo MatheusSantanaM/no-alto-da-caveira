@@ -1,8 +1,8 @@
 extends Node2D
 
 @onready var texture_rect: TextureRect = $TextureRect
+@onready var cenario: Sprite2D = $Cenario
 
-# Uma entrada por personagem (não uma pra normal e outra pra infectado)
 var all_characters := [
 	preload("res://Personagens/cidadao1.jpg"),
 	preload("res://Personagens/cidadao2.jpg"),
@@ -22,12 +22,13 @@ func _ready() -> void:
 	texture_rect.size = Vector2(300, 500)
 	texture_rect.position = Vector2(450, 40)
 	shader_material = ShaderMaterial.new()
+	var grayscale = ShaderMaterial.new()
+	grayscale.shader = preload("res://Scripts/grayscale.gdshader")
 	shader_material.shader = preload("res://Scripts/grayscale.gdshader")
+	cenario.material = grayscale
 	texture_rect.material = shader_material
-
-	round_characters = all_characters.duplicate()
+	round_characters = all_characters
 	round_characters.shuffle()
-	round_characters = round_characters.slice(0, 4)  # pega só 4, sem repetição
 
 	next_character()
 
