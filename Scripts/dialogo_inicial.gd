@@ -1,6 +1,7 @@
 extends Node2D
 
 var dialogos: Array[String] = [
+	"[Julho,1998]\n[Itapajé, Ceará]",
 	"Você acordou mais uma vez, infelizmente",
 	"É hora de voltar ao trabalho, aquele maldito trabalho",
 	"Por mais que odeie, tem de fazê-lo",
